@@ -81,7 +81,7 @@ export default function WhatMakesUsDifferent() {
                         key={index}
                         sx={{
                             minWidth: { xs: "75%", sm: "45%", md: "300px" },  // IMPORTANT
-                            maxWidth: "300px",
+                            maxWidth: "420px",
                             background: "#fff",
                             borderRadius: "16px",
                             //boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
@@ -110,7 +110,7 @@ export default function WhatMakesUsDifferent() {
                         {/* TITLE */}
                         <Typography
                             sx={{
-                                fontSize: "14px",
+                                fontSize: "16px",
                                 fontWeight: 700,
                                 color: "#0d1b2a",
                                 mb: 1
@@ -122,7 +122,7 @@ export default function WhatMakesUsDifferent() {
                         {/* DESCRIPTION */}
                         <Typography
                             sx={{
-                                fontSize: "13px",
+                                fontSize: "14px",
                                 color: "#4a4f52",
                                 lineHeight: 1.6
                             }}

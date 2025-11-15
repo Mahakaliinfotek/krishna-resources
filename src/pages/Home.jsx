@@ -22,7 +22,6 @@ export default function HomePage() {
                 <KrishnaResourcesHero />
                 <BusinessFocusSection />
                 <CoreOfferings />
-                <ComplianceHSE />
                 <WhatMakesUsDifferent />
                 <Achievements />
                 <MarketsReach />

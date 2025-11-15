@@ -27,6 +27,11 @@ export default function CoreOfferings() {
             title: "Local Trading & Offtake",
             desc: "Term and spot offtake from partner mines, structured supply programs aligned to client specifications and delivery windows.",
         },
+        {
+            icon: <GroupsIcon sx={{ fontSize: 30 }} />,
+            title: "Compliance and HSE",
+            desc: " Operations aligned to Indonesian mining, safety, and environmental regulations. HSE inductions, PPE, dust suppression, water spraying, progressive rehabilitation plans.",
+        },
     ];
 
     return (
@@ -46,34 +51,46 @@ export default function CoreOfferings() {
                     fontWeight: 700,
                     fontFamily: "Montserrat, sans-serif",
                     color: "#2F6F6F",
-                    mb: { xs: 4, md: 6 },
+                    mb: { xs: 3, md: 3 },
                 }}
             >
                 Core Offerings
             </Typography>
 
             {/* CARD WRAPPER */}
+            {/* HORIZONTAL SCROLL WRAPPER */}
             <Box
                 sx={{
                     maxWidth: "1400px",
                     mx: "auto",
                     display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    gap: { xs: 3, md: 4 },
+                    flexDirection: "row",
+                    gap: { xs: 2, md: 2 },
+                    overflowX: "auto",
+                   
+                    scrollBehavior: "smooth",
+
+                    /* HIDE SCROLLBAR */
+                    scrollbarWidth: "none",      // Firefox
+                    msOverflowStyle: "none",     // IE/Edge
+                    "&::-webkit-scrollbar": {
+                        display: "none"          // Chrome/Safari
+                    }
                 }}
             >
                 {items.map((item, index) => (
                     <Box
                         key={index}
                         sx={{
-                            width: { xs: "100%", sm: "48%", md: "23%" },
+                            minWidth: { xs: "80%", sm: "48%", md: "300px" }, // important
+                            maxWidth: "300px",
                             backgroundColor: "#fff",
                             p: { xs: 3, md: 4 },
                             borderRadius: "14px",
-                            boxShadow: "0px 4px 18px rgba(0,0,0,0.08)",
+                              boxShadow: "0px 4px 18px rgba(0,0,0,0.08)",
                             borderTop: "4px solid #3EA8A8",
                             textAlign: "left",
+                            flexShrink: 0, // keep width fixed
                         }}
                     >
                         {/* Icon */}
@@ -112,6 +129,8 @@ export default function CoreOfferings() {
                     </Box>
                 ))}
             </Box>
+
+
         </Box>
     );
 }
