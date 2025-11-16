@@ -11,24 +11,41 @@ import WhatMakesUsDifferent from "../components/WhatMakesUsDifferent";
 import MarketsReach from "../components/MarketsReach";
 import Footer from "../components/Footer";
 import Achievements from "../components/Achievements";
+import Header from "../layouts/Header";
+import HeroSlider from "../components/common/HeroSlider";
+import PeopleCultureSlider from "../components/homepage/PeopleCultureSlider";
+import VisionSection from "../components/homepage/VisionSection";
+import BusinessesSection from "../components/homepage/BusinessesSection";
+import HistorySection from "../components/homepage/HistorySection";
+import SustainabilitySection from "../components/homepage/SustainabilitySection";
+import MediaCSRSection from "../components/homepage/MediaCSRSection";
+import CompanyStrip from "../components/common/CompanyStrip";
 
 export default function HomePage() {
     return (
         <>
+            <Header />
+            <HeroSlider />
+            <CompanyStrip />
 
-            <Box xs={{
-
-            }}>
-                <KrishnaResourcesHero />
-                <BusinessFocusSection />
-                <CoreOfferings />
-                <WhatMakesUsDifferent />
-                <Achievements />
-                <MarketsReach />
-                <Footer />
+            {/* <KrishnaResourcesHero /> */}
+            <BusinessFocusSection />
+            <CoreOfferings />
+            <WhatMakesUsDifferent />
+            <Achievements />
+            <MarketsReach />
+            {/* <Footer /> */}
 
 
-            </Box>
+
+
+            <PeopleCultureSlider />
+            <VisionSection />
+            <BusinessesSection />
+            <HistorySection />
+            <SustainabilitySection />
+            <MediaCSRSection />
+            <CompanyStrip />
 
 
 

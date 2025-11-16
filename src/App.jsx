@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/Home'
+import Story from './pages/Story/Story'
+import LegacyLeadershipPage from './LegacyLeadershipPage'
+import { Sustainability } from './Sustainability'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +15,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-
+        <Route path="/story" element={<Story/>} />
+        <Route path="/about-us" element={<Story />} />
+        <Route path="/legacy-leadership" element={<LegacyLeadershipPage />} />
+        <Route path="/sustainability" element={<Sustainability />} />
 
       </Routes>
 
