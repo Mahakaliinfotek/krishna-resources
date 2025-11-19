@@ -9,7 +9,7 @@ import CoreOfferings from "../components/CoreOfferings";
 import ComplianceHSE from "../components/ComplianceHSE";
 import WhatMakesUsDifferent from "../components/WhatMakesUsDifferent";
 import MarketsReach from "../components/MarketsReach";
-import Footer from "../components/Footer";
+
 import Achievements from "../components/Achievements";
 import Header from "../layouts/Header";
 import HeroSlider from "../components/common/HeroSlider";
@@ -20,6 +20,7 @@ import HistorySection from "../components/homepage/HistorySection";
 import SustainabilitySection from "../components/homepage/SustainabilitySection";
 import MediaCSRSection from "../components/homepage/MediaCSRSection";
 import CompanyStrip from "../components/common/CompanyStrip";
+import Footer from "../layouts/Footer";
 
 export default function HomePage() {
     return (
@@ -46,6 +47,7 @@ export default function HomePage() {
             <SustainabilitySection />
             <MediaCSRSection />
             <CompanyStrip />
+            <Footer />
 
 
 

@@ -10,12 +10,12 @@ const data = [
     {
         title: "End-to-end control to the ship rail",
         desc: "One responsible counterparty from pit to barge to mother vessel. Fewer handoffs and fewer surprises.",
-        img: "https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=900&q=60"
+        img: "https://businessmediamags.co.za/wp-content/uploads/2019/11/iStock-510861694-1024x478.jpg"
     },
     {
         title: "Specification consistency",
         desc: "Tight SOPs for sampling, moisture management, and blending provide repeatable cargo quality and clean documentation at discharge.",
-        img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=900&q=60"
+        img: "https://bsmedia.business-standard.com/_media/bs/img/article/2025-02/19/full/1739989496-3555.jpg?im=FitAndFill=(826,465)"
 
     },
 
@@ -51,7 +51,7 @@ export default function WhatMakesUsDifferent() {
                 sx={{
                     fontSize: { xs: "26px", md: "32px" },
                     fontWeight: 700,
-                    fontFamily: "Montserrat, sans-serif",
+                    fontFamily: "Manrope !important",
                     color: "#2F6F6F",
                     mb: 2,
                 }}
@@ -60,33 +60,27 @@ export default function WhatMakesUsDifferent() {
             </Typography>
 
             {/* CARD GRID */}
+            {/* CARD GRID */}
             <Box
                 sx={{
-                    display: "flex",
-                    flexDirection: "row",
+                    display: "grid",
                     gap: 3,
-                    overflowX: "auto",
-                    pb: 1,
-                    scrollBehavior: "smooth",
-                    scrollbarWidth: "none",          // Firefox
-                    msOverflowStyle: "none",         // Internet Explorer / Edge
-
-                    "&::-webkit-scrollbar": {
-                        display: "none"              // Chrome / Safari
-                    }
+                    gridTemplateColumns: {
+                        xs: "1fr",            // mobile → 1 per row
+                        sm: "1fr 1fr",        // tablet → 2 per row
+                        md: "1fr 1fr 1fr"     // desktop → 3 per row
+                    },
                 }}
             >
                 {data.map((item, index) => (
                     <Box
                         key={index}
                         sx={{
-                            minWidth: { xs: "75%", sm: "45%", md: "300px" },  // IMPORTANT
+                            width: "100%",
                             maxWidth: "420px",
                             background: "#fff",
                             borderRadius: "16px",
-                            //boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
                             p: 1,
-                            flexShrink: 0,  // prevents items from shrinking
                             transition: "0.3s",
                             "&:hover": {
                                 boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
@@ -110,6 +104,7 @@ export default function WhatMakesUsDifferent() {
                         {/* TITLE */}
                         <Typography
                             sx={{
+                                fontFamily: "Manrope !important",
                                 fontSize: "16px",
                                 fontWeight: 700,
                                 color: "#0d1b2a",
@@ -122,6 +117,7 @@ export default function WhatMakesUsDifferent() {
                         {/* DESCRIPTION */}
                         <Typography
                             sx={{
+                                fontFamily: "Manrope !important",
                                 fontSize: "14px",
                                 color: "#4a4f52",
                                 lineHeight: 1.6
@@ -132,6 +128,7 @@ export default function WhatMakesUsDifferent() {
                     </Box>
                 ))}
             </Box>
+
 
         </Box>
     );

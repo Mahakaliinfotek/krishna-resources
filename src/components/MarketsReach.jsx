@@ -21,7 +21,7 @@ export default function MarketsReach() {
                     sx={{
                         fontSize: { xs: "22px", md: "32px" },
                         fontWeight: 700,
-                        fontFamily: "Montserrat, sans-serif",
+                        fontFamily: "Manrope !important",
                         color: "#2F6F6F",
                         mb: 2,
                     }}
@@ -37,6 +37,7 @@ export default function MarketsReach() {
                         color: "#333",
                         maxWidth: "900px",
                         mb: 4,
+                        fontFamily: "Manrope !important",
                     }}
                 >
                     From our strategic base in Indonesia, we serve a diverse portfolio of
@@ -45,7 +46,7 @@ export default function MarketsReach() {
                 </Typography>
 
                 {/* WORLD MAP IMAGE */}
-                <Box
+                {/* <Box
                     component="img"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQDtT1e2-j0m8p8avjxE1cTVc_ex__ssE1bswE1Z3qZ0exHNUJ0Jx6Sh2xtih_Cu_bfYAWTELR6G9iRyOwMObRa4XBbVivw_N7LGBJdR6JCgnm6tgJnG7MNLWWwXnt-McDuC16j822lwV_rtv4hziZTdzCHYrUo_19JThJufuP5cPfGJYVJhB6jF4Woy2UIVNM-4eiOOmKCHpITWdklUvZl96GR_9QRrsLqHXtHUvtBV0b3BnXIMRunDJduzmZArdIH1f7pX9llzoq"
                     alt="World Map"
@@ -57,7 +58,7 @@ export default function MarketsReach() {
                         objectFit: "fill"
                         // objectFit: "fit"
                     }}
-                />
+                /> */}
 
                 {/* ICON ROW */}
                 <Box

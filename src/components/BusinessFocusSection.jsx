@@ -42,7 +42,7 @@ export default function BusinessFocusSection() {
                 py: { xs: 6, md: 4 },
                 px: { xs: 2, md: 6 },
                 backgroundColor: "#E6FBFA",
-                fontFamily: "Inter, sans-serif",
+                fontFamily: "Manrope !important",
             }}
         >
             <Box
@@ -59,9 +59,10 @@ export default function BusinessFocusSection() {
                 <Box sx={{ flex: 1 }}>
                     <Typography
                         sx={{
+
                             fontSize: { xs: "22px", md: "32px" },
                             fontWeight: 700,
-                            fontFamily: "Montserrat, sans-serif",
+                            fontFamily: "Manrope !important",
                             color: "#2F6F6F",
                             mb: 2,
                         }}
@@ -75,6 +76,7 @@ export default function BusinessFocusSection() {
                             lineHeight: 1.6,
                             color: "#1f2d2d",
                             maxWidth: "95%",
+                            fontFamily: "Manrope !important",
                         }}
                     >
                         Upstream coal mining and in-country trading in East and South
