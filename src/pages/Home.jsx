@@ -17,11 +17,12 @@ import PeopleCultureSlider from "../components/homepage/PeopleCultureSlider";
 import VisionSection from "../components/homepage/VisionSection";
 import BusinessesSection from "../components/homepage/BusinessesSection";
 import HistorySection from "../components/homepage/HistorySection";
-import SustainabilitySection from "../components/homepage/SustainabilitySection";
+
 import MediaCSRSection from "../components/homepage/MediaCSRSection";
 import CompanyStrip from "../components/common/CompanyStrip";
-import Footer from "../layouts/Footer";
+
 import ContactUs from "../components/homepage/ContactUs";
+import SustainabilitySection from "../components/homepage/SustainabilitySection";
 
 export default function HomePage() {
     return (
@@ -49,7 +50,7 @@ export default function HomePage() {
             <MediaCSRSection />
             <CompanyStrip />
             <ContactUs />
-            <Footer />
+
 
 
 

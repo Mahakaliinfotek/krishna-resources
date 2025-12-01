@@ -7,6 +7,7 @@ import HomePage from './pages/Home'
 import Story from './pages/Story/Story'
 import LegacyLeadershipPage from './LegacyLeadershipPage'
 import { Sustainability } from './Sustainability'
+import { HomePageLayout } from './layouts/HomePageLayout'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,11 +15,15 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/story" element={<Story/>} />
+
+        <Route path="/story" element={<Story />} />
         <Route path="/about-us" element={<Story />} />
-        <Route path="/legacy-leadership" element={<LegacyLeadershipPage />} />
-        <Route path="/sustainability" element={<Sustainability />} />
+        <Route path="/" element={<HomePageLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/legacy-leadership" element={<LegacyLeadershipPage />} />
+          <Route path="/sustainability" element={<Sustainability />} />
+
+        </Route>
 
       </Routes>
 
